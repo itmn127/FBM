@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CONTACT | Full Bet Management</title>
+  <link rel="icon" type="image/png" href="/FullBetManagement_logo_mark_red.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-white text-slate-900 font-sans">
+    <!-- Header -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 py-6 flex justify-between items-center">
+      <a class="flex items-center gap-3" href="/">
+        <img src="/FBM2.png" alt="Full Bet Management" class="h-8 md:h-12 w-auto" />
+        <span class="sr-only">FULL BET MANAGEMENT</span>
+      </a>
+      <div class="hidden md:flex flex-1 items-center justify-end gap-10 text-base font-semibold text-gray-700 mr-6">
+        <a class="hover:text-[#CC0000] transition-colors" href="/service.html">サービス</a>
+        <a class="hover:text-[#CC0000] transition-colors" href="/mission.html">ミッション</a>
+        <a class="hover:text-[#CC0000] transition-colors" href="/company.html">会社情報</a>
+        <a class="hover:text-[#CC0000] transition-colors" href="/news.html">ニュース</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a class="bg-[#CC0000] text-white text-xs md:text-sm font-bold px-4 py-2 md:px-6 md:py-2.5 whitespace-nowrap transition hover:bg-red-700 active:scale-95 shadow-lg" href="/contact.html">
+          お問い合わせ
+        </a>
+        <button type="button" id="menu-toggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 border border-gray-200 rounded-md text-gray-700 hover:text-[#CC0000] hover:border-[#CC0000] transition-colors" aria-expanded="false" aria-controls="mobile-nav" aria-label="メニュー">
+          <span id="menu-icon" class="text-xl leading-none">≡</span>
+        </button>
+      </div>
+      <div id="mobile-nav" class="md:hidden absolute left-0 top-full w-full bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300 opacity-0 -translate-y-2 pointer-events-none">
+        <div class="px-6 py-5 flex flex-col gap-4 text-sm font-semibold text-gray-700">
+          <a class="hover:text-[#CC0000] transition-colors" href="/service.html">サービス</a>
+          <a class="hover:text-[#CC0000] transition-colors" href="/mission.html">ミッション</a>
+          <a class="hover:text-[#CC0000] transition-colors" href="/company.html">会社情報</a>
+          <a class="hover:text-[#CC0000] transition-colors" href="/news.html">ニュース</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-32 pb-24 px-6">
+      <section class="max-w-6xl mx-auto">
+        <div class="mb-12">
+          <p class="text-sm font-semibold text-[#CC0000]">Contact</p>
+          <h1 class="text-3xl md:text-4xl font-bold mt-2">お問い合わせ</h1>
+          <p class="text-sm text-gray-600 mt-4">
+            ご相談やご質問はお電話で承っております。
+          </p>
+        </div>
+        <div class="border-t border-gray-100 pt-12">
+          <div class="grid gap-8 md:grid-cols-[240px_1fr] items-start">
+            <div class="flex items-start gap-3">
+              <span class="mt-2 h-2 w-2 rounded-full bg-gray-900"></span>
+              <div>
+                <p class="text-2xl md:text-3xl font-bold tracking-wide">PHONE</p>
+                <p class="text-xs font-semibold text-gray-600 mt-1">電話でのお問い合わせ</p>
+              </div>
+            </div>
+            <div>
+              <div class="bg-[#f5f5f5] rounded-2xl px-8 py-6 flex items-center justify-center gap-3 text-xl md:text-2xl font-semibold text-gray-900">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M6.6 10.2c1.4 2.6 3.6 4.8 6.2 6.2l2.1-2.1c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.9.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.7 21 3 13.3 3 4c0-.6.4-1 1-1h4.3c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.9.1.4 0 .8-.3 1.1l-2.1 2.1Z" />
+                </svg>
+                <span>03-4563-0125</span>
+              </div>
+              <div class="mt-4 text-sm text-gray-700">
+                <span class="font-semibold mr-3">受付時間</span>
+                <span>10:00〜18:00 月曜日〜金曜日（年末年始、祝日除く）</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-16 px-6">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
+        <a class="flex items-center" href="/">
+          <img src="/FBM4.png" alt="Full Bet Management" class="h-10 md:h-12 w-auto" />
+          <span class="sr-only">FULL BET MANAGEMENT</span>
+        </a>
+        <div class="text-gray-300 text-xs flex flex-col gap-3 md:items-end">
+          <a class="hover:text-white transition-colors" href="/privacy.html">個人情報保護方針</a>
+          <span>©2026 Full Bet Management Inc. All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    const menuIcon = document.getElementById('menu-icon');
+    let isMenuOpen = false;
+
+    menuToggle.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+      menuToggle.setAttribute('aria-expanded', isMenuOpen);
+      menuIcon.textContent = isMenuOpen ? '×' : '≡';
+      if (isMenuOpen) {
+        mobileNav.classList.remove('opacity-0', '-translate-y-2', 'pointer-events-none');
+        mobileNav.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      } else {
+        mobileNav.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+        mobileNav.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      }
+    });
+  </script>
+</body>
+</html>

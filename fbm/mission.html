@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MISSION | Full Bet Management</title>
+  <link rel="icon" type="image/png" href="/FullBetManagement_logo_mark_red.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen bg-white text-slate-900 font-sans">
+    <!-- Header -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 py-6 flex justify-between items-center">
+      <a class="flex items-center gap-3" href="/">
+        <img src="/FBM2.png" alt="Full Bet Management" class="h-8 md:h-12 w-auto" />
+        <span class="sr-only">FULL BET MANAGEMENT</span>
+      </a>
+      <div class="hidden md:flex flex-1 items-center justify-end gap-10 text-base font-semibold text-gray-700 mr-6">
+        <a class="hover:text-[#CC0000] transition-colors" href="/service.html">サービス</a>
+        <a class="hover:text-[#CC0000] transition-colors" href="/mission.html">ミッション</a>
+        <a class="hover:text-[#CC0000] transition-colors" href="/company.html">会社情報</a>
+        <a class="hover:text-[#CC0000] transition-colors" href="/news.html">ニュース</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a class="bg-[#CC0000] text-white text-xs md:text-sm font-bold px-4 py-2 md:px-6 md:py-2.5 whitespace-nowrap transition hover:bg-red-700 active:scale-95 shadow-lg" href="/contact.html">
+          お問い合わせ
+        </a>
+        <button type="button" id="menu-toggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 border border-gray-200 rounded-md text-gray-700 hover:text-[#CC0000] hover:border-[#CC0000] transition-colors" aria-expanded="false" aria-controls="mobile-nav" aria-label="メニュー">
+          <span id="menu-icon" class="text-xl leading-none">≡</span>
+        </button>
+      </div>
+      <div id="mobile-nav" class="md:hidden absolute left-0 top-full w-full bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300 opacity-0 -translate-y-2 pointer-events-none">
+        <div class="px-6 py-5 flex flex-col gap-4 text-sm font-semibold text-gray-700">
+          <a class="hover:text-[#CC0000] transition-colors" href="/service.html">サービス</a>
+          <a class="hover:text-[#CC0000] transition-colors" href="/mission.html">ミッション</a>
+          <a class="hover:text-[#CC0000] transition-colors" href="/company.html">会社情報</a>
+          <a class="hover:text-[#CC0000] transition-colors" href="/news.html">ニュース</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+      <div class="fade-in-section">
+        <section class="px-6">
+          <div class="max-w-5xl mx-auto text-center py-16">
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight serif mb-4">私たちの想い</h1>
+            <p class="text-2xl md:text-4xl font-bold tracking-wide text-[#CC0000] mb-6">Full Bet Management</p>
+            <p class="text-sm md:text-base text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              組織の「実行力」そのものを変革する。
+              <br class="md:hidden" />
+              あなたの組織が持つ可能性に、私たちは誰よりも深く、
+              <br class="md:hidden" />
+              熱く、フルベットします。
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="fade-in-section">
+        <section class="bg-[#CC0000] text-white py-24 px-6 relative overflow-hidden">
+          <div class="absolute -top-10 -left-10 w-32 h-32 bg-white/20 rounded-full"></div>
+          <div class="absolute top-1/2 left-20 w-20 h-20 bg-white/25 rounded-[30%]"></div>
+          <div class="absolute bottom-10 right-16 w-24 h-24 bg-white/20 rounded-full"></div>
+          <div class="absolute top-24 right-24 w-16 h-16 bg-white/25 rounded-[35%]"></div>
+          <div class="absolute bottom-8 right-1/3 w-10 h-10 bg-white/20 rounded-full"></div>
+          <div class="relative max-w-5xl mx-auto text-center">
+            <p class="text-2xl tracking-[0.25em] mb-4">MISSION</p>
+            <h2 class="text-[7vw] sm:text-4xl md:text-7xl font-black mb-4 whitespace-nowrap">Full Bet on Potential</h2>
+            <p class="text-base md:text-lg font-semibold mb-6">- 社会の可能性にフルベットする -</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="fade-in-section">
+        <section class="bg-white py-24 px-6">
+          <div class="max-w-5xl mx-auto text-center mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">VISION</h2>
+            <h2 class="text-[7vw] sm:text-4xl md:text-7xl font-bold mb-4 whitespace-nowrap">Full Bet on Action</h2>
+            <p class="text-sm md:text-base text-gray-600">- 社会の覚悟をアップデートする -</p>
+          </div>
+          <div class="max-w-6xl mx-auto">
+            <p class="text-2xl font-semibold text-[#CC0000] mb-6">行動指針</p>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 px-6 py-5">
+                <div class="w-12 h-12 rounded-full bg-[#CC0000] text-white font-bold flex items-center justify-center">01</div>
+                <p class="text-sm md:text-base font-semibold text-gray-900">理想の自分をイメージし続けること</p>
+              </div>
+              <div class="bg-white rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 px-6 py-5">
+                <div class="w-12 h-12 rounded-full bg-[#CC0000] text-white font-bold flex items-center justify-center">02</div>
+                <p class="text-sm md:text-base font-semibold text-gray-900">常にポジティブマインドを持つこと</p>
+              </div>
+              <div class="bg-white rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 px-6 py-5">
+                <div class="w-12 h-12 rounded-full bg-[#CC0000] text-white font-bold flex items-center justify-center">03</div>
+                <p class="text-sm md:text-base font-semibold text-gray-900">何事にも本気で取り組むこと</p>
+              </div>
+              <div class="bg-white rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 px-6 py-5">
+                <div class="w-12 h-12 rounded-full bg-[#CC0000] text-white font-bold flex items-center justify-center">04</div>
+                <p class="text-sm md:text-base font-semibold text-gray-900">失敗を恐れずに挑戦し続けること</p>
+              </div>
+              <div class="bg-white rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 px-6 py-5">
+                <div class="w-12 h-12 rounded-full bg-[#CC0000] text-white font-bold flex items-center justify-center">05</div>
+                <p class="text-sm md:text-base font-semibold text-gray-900">経営者マインドを持つこと</p>
+              </div>
+              <div class="bg-white rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 px-6 py-5">
+                <div class="w-12 h-12 rounded-full bg-[#CC0000] text-white font-bold flex items-center justify-center">06</div>
+                <p class="text-sm md:text-base font-semibold text-gray-900">思いやりと感謝の気持ちを持つこと</p>
+              </div>
+              <div class="bg-white rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 px-6 py-5">
+                <div class="w-12 h-12 rounded-full bg-[#CC0000] text-white font-bold flex items-center justify-center">07</div>
+                <p class="text-sm md:text-base font-semibold text-gray-900">礼儀礼節を重んじること</p>
+              </div>
+              <div class="bg-white rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 px-6 py-5">
+                <div class="w-12 h-12 rounded-full bg-[#CC0000] text-white font-bold flex items-center justify-center">08</div>
+                <p class="text-sm md:text-base font-semibold text-gray-900">One For All, All For One.</p>
+              </div>
+              <div class="bg-white rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 px-6 py-5">
+                <div class="w-12 h-12 rounded-full bg-[#CC0000] text-white font-bold flex items-center justify-center">09</div>
+                <p class="text-sm md:text-base font-semibold text-gray-900">Never Give Up.</p>
+              </div>
+              <div class="bg-white rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 px-6 py-5">
+                <div class="w-12 h-12 rounded-full bg-[#CC0000] text-white font-bold flex items-center justify-center">10</div>
+                <p class="text-sm md:text-base font-semibold text-gray-900">笑顔で明るく、元気よく</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-16 px-6">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+        <a class="flex items-center" href="/">
+          <img src="/FBM4.png" alt="Full Bet Management" class="h-10 md:h-12 w-auto" />
+          <span class="sr-only">FULL BET MANAGEMENT</span>
+        </a>
+        <div class="text-gray-300 text-xs flex flex-col gap-3 md:items-end">
+          <a class="hover:text-white transition-colors" href="/privacy.html">個人情報保護方針</a>
+          <span>©2026 Full Bet Management Inc. All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    const menuIcon = document.getElementById('menu-icon');
+    let isMenuOpen = false;
+
+    menuToggle.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+      menuToggle.setAttribute('aria-expanded', isMenuOpen);
+      menuIcon.textContent = isMenuOpen ? '×' : '≡';
+      if (isMenuOpen) {
+        mobileNav.classList.remove('opacity-0', '-translate-y-2', 'pointer-events-none');
+        mobileNav.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      } else {
+        mobileNav.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+        mobileNav.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      }
+    });
+
+    // Fade In Animation
+    const fadeInObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in-section').forEach(el => {
+      fadeInObserver.observe(el);
+    });
+  </script>
+</body>
+</html>
