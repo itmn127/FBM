@@ -103,24 +103,7 @@
                     type="button" data-filter-value="web">WEB</button>
                   <button
                     class="filter-button border border-gray-200 bg-white px-4 py-2 text-sm font-semibold transition-colors hover:border-[#CC0000] hover:text-[#CC0000]"
-                    type="button" data-filter-value="onsite">現地開催</button>
-                </div>
-              </div>
-              <div class="filter-group" data-filter-group="area">
-                <p class="text-sm font-bold text-gray-900 mb-3">エリア</p>
-                <div class="flex flex-wrap gap-2">
-                  <button
-                    class="filter-button is-active border border-gray-200 bg-white px-4 py-2 text-sm font-semibold transition-colors hover:border-[#CC0000] hover:text-[#CC0000]"
-                    type="button" data-filter-value="all">すべて</button>
-                  <button
-                    class="filter-button border border-gray-200 bg-white px-4 py-2 text-sm font-semibold transition-colors hover:border-[#CC0000] hover:text-[#CC0000]"
-                    type="button" data-filter-value="online">オンライン</button>
-                  <button
-                    class="filter-button border border-gray-200 bg-white px-4 py-2 text-sm font-semibold transition-colors hover:border-[#CC0000] hover:text-[#CC0000]"
-                    type="button" data-filter-value="tokyo">東京</button>
-                  <button
-                    class="filter-button border border-gray-200 bg-white px-4 py-2 text-sm font-semibold transition-colors hover:border-[#CC0000] hover:text-[#CC0000]"
-                    type="button" data-filter-value="osaka">大阪</button>
+                    type="button" data-filter-value="onsite">対面</button>
                 </div>
               </div>
               <div class="filter-group" data-filter-group="target">
@@ -135,9 +118,6 @@
                   <button
                     class="filter-button border border-gray-200 bg-white px-4 py-2 text-sm font-semibold transition-colors hover:border-[#CC0000] hover:text-[#CC0000]"
                     type="button" data-filter-value="manager">管理職向け</button>
-                  <button
-                    class="filter-button border border-gray-200 bg-white px-4 py-2 text-sm font-semibold transition-colors hover:border-[#CC0000] hover:text-[#CC0000]"
-                    type="button" data-filter-value="hr">人事向け</button>
                 </div>
               </div>
               <div class="filter-group" data-filter-group="host">
@@ -148,10 +128,10 @@
                     type="button" data-filter-value="all">すべて</button>
                   <button
                     class="filter-button border border-gray-200 bg-white px-4 py-2 text-sm font-semibold transition-colors hover:border-[#CC0000] hover:text-[#CC0000]"
-                    type="button" data-filter-value="owned">自社セミナー</button>
+                    type="button" data-filter-value="owned">自社開催</button>
                   <button
                     class="filter-button border border-gray-200 bg-white px-4 py-2 text-sm font-semibold transition-colors hover:border-[#CC0000] hover:text-[#CC0000]"
-                    type="button" data-filter-value="collab">コラボセミナー</button>
+                    type="button" data-filter-value="collab">共同開催</button>
                 </div>
               </div>
             </div>
@@ -165,7 +145,7 @@
           <div id="seminar-list" class="space-y-5">
             <article
               class="seminar-card fade-in-section grid gap-5 border border-gray-100 bg-white p-5 md:grid-cols-[170px_1fr_auto] md:p-7 shadow-[0_14px_32px_rgba(15,23,42,0.06)]"
-              data-format="web" data-area="online" data-target="owner" data-host="owned">
+              data-format="web" data-area="online" data-target="owner" data-host="owned" data-start="2026-07-18T13:00">
               <div class="border-l-4 border-[#CC0000] pl-4">
                 <span class="inline-flex bg-[#CC0000] px-3 py-1 text-xs font-bold text-white">受付中</span>
                 <p class="mt-4 text-sm font-bold text-gray-900">2026.07.18</p>
@@ -188,7 +168,7 @@
 
             <article
               class="seminar-card fade-in-section grid gap-5 border border-gray-100 bg-white p-5 md:grid-cols-[170px_1fr_auto] md:p-7 shadow-[0_14px_32px_rgba(15,23,42,0.06)]"
-              data-format="onsite" data-area="tokyo" data-target="manager" data-host="owned">
+              data-format="onsite" data-area="tokyo" data-target="manager" data-host="owned" data-start="2026-07-24T16:00">
               <div class="border-l-4 border-[#CC0000] pl-4">
                 <span class="inline-flex bg-[#CC0000] px-3 py-1 text-xs font-bold text-white">受付中</span>
                 <p class="mt-4 text-sm font-bold text-gray-900">2026.07.24</p>
@@ -211,7 +191,7 @@
 
             <article
               class="seminar-card fade-in-section grid gap-5 border border-gray-100 bg-white p-5 md:grid-cols-[170px_1fr_auto] md:p-7 shadow-[0_14px_32px_rgba(15,23,42,0.06)]"
-              data-format="web" data-area="online" data-target="hr" data-host="collab">
+              data-format="web" data-area="online" data-target="hr" data-host="collab" data-start="2026-08-02T12:00">
               <div class="border-l-4 border-[#CC0000] pl-4">
                 <span class="inline-flex bg-[#CC0000] px-3 py-1 text-xs font-bold text-white">受付中</span>
                 <p class="mt-4 text-sm font-bold text-gray-900">2026.08.02</p>
@@ -234,7 +214,7 @@
 
             <article
               class="seminar-card fade-in-section grid gap-5 border border-gray-100 bg-white p-5 md:grid-cols-[170px_1fr_auto] md:p-7 shadow-[0_14px_32px_rgba(15,23,42,0.06)]"
-              data-format="onsite" data-area="osaka" data-target="owner" data-host="collab">
+              data-format="onsite" data-area="osaka" data-target="owner" data-host="collab" data-start="2026-08-09T15:00">
               <div class="border-l-4 border-[#CC0000] pl-4">
                 <span class="inline-flex bg-[#CC0000] px-3 py-1 text-xs font-bold text-white">受付中</span>
                 <p class="mt-4 text-sm font-bold text-gray-900">2026.08.09</p>
@@ -257,7 +237,7 @@
 
             <article
               class="seminar-card fade-in-section grid gap-5 border border-gray-100 bg-white p-5 md:grid-cols-[170px_1fr_auto] md:p-7 shadow-[0_14px_32px_rgba(15,23,42,0.06)]"
-              data-format="web" data-area="online" data-target="manager" data-host="owned">
+              data-format="web" data-area="online" data-target="manager" data-host="owned" data-start="2026-08-20T19:00">
               <div class="border-l-4 border-[#CC0000] pl-4">
                 <span class="inline-flex bg-[#CC0000] px-3 py-1 text-xs font-bold text-white">受付中</span>
                 <p class="mt-4 text-sm font-bold text-gray-900">2026.08.20</p>
@@ -341,7 +321,11 @@
       host: 'all',
     };
 
-    const cards = Array.from(document.querySelectorAll('.seminar-card'));
+    const seminarList = document.getElementById('seminar-list');
+    const cards = Array.from(document.querySelectorAll('.seminar-card')).sort((a, b) => {
+      return new Date(a.dataset.start) - new Date(b.dataset.start);
+    });
+    cards.forEach((card) => seminarList.appendChild(card));
     const emptyMessage = document.getElementById('empty-message');
 
     function applyFilters() {
